@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.Item;
 
 public class Item {
 
@@ -19,7 +19,7 @@ public class Item {
         updateSellIn();
     }
 
-    private void updateQuality() {
+    protected void updateQuality() {
         if (quality > 0) {
             quality--;
         }
@@ -30,7 +30,7 @@ public class Item {
         }
     }
 
-    private void updateSellIn() {
+    protected void updateSellIn() {
         sellIn--;
     }
 
