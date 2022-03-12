@@ -48,14 +48,7 @@ class GildedRose {
                     System.out.println("do nothing");
                     break;
                 default:
-                    if (item.quality > 0) {
-                        item.quality = item.quality - 1;
-                    }
-                    if (item.sellIn <= 0) {
-                        if (item.quality > 0) {
-                            item.quality = item.quality - 1;
-                        }
-                    }
+                    item.updateItem();
                     break;
             }
 
